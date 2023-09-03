@@ -1,0 +1,83 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: rgb(220, 233, 238);
+  padding-block: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.postContainer {
+  width: 300px;
+  height: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(75, 72, 73);
+  margin-inline: 20px;
+  box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.75);
+}
+
+.headContainer {
+  width: 100%;
+  background-image: url('./assets/pexels-frank-cone-3607542.jpg');
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.header{
+  color:rgb(220, 233, 238);
+  text-shadow: 2px 2px 5px rgb(104, 103, 103);
+  width: 100%;
+  margin:0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.text {
+  text-align: left;
+  width: 250px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button {
+  border-radius:.2em;
+  border: 1px solid transparent;
+  margin-right: 1em;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: inherit;
+  background-color: rgb(49, 46, 47);
+  cursor: pointer;
+  transition: border-color 0.25s, color 0.25s;
+}
+
+button:hover {
+    background-color: rgb(216, 220, 220);
+    color: rgb(59, 61, 61);
+    border-color: #1a1a1a;
+    transition: background-color 0.25s, color 0.25s;
+  }
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+
+
+
+

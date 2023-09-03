@@ -1,0 +1,84 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background: rgb(101, 43, 62);
+  color: rgb(249, 212, 212);
+  text-align: center;
+  justify-content: center;
+}
+
+.headContainer {
+  background-image: url('./assets/pexels-pixabay-57705.jpg');
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.header{
+  color:rgb(220, 233, 238);
+  background-color: rgba(131, 9, 15, 0.582);
+  text-shadow: 2px 2px 5px rgb(40, 31, 34);
+  overflow-y: hidden;
+  margin:0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.content {
+  width: 80%;
+  padding-inline: 3em;
+  text-align: left;
+  margin-inline: auto;
+}
+
+.text {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3em;
+}
+
+.block1 {
+  background-color: rgb(140, 62, 88);
+}
+
+.block2 {
+  background-color: rgb(101, 43, 62);
+}
+
+.block3 {
+  background-color: rgb(140, 62, 88);
+}
+
+.button {
+  border-radius:.2em;
+  border: 1px solid transparent;
+  margin-right: 1em;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: rgb(249, 212, 212);
+  color: rgb(135, 41, 71);
+  cursor: pointer;
+  transition: border-color 0.25s, color 0.25s;
+}
+
+  .button:hover {
+      background-color: rgb(135, 41, 71);
+      color: #ffffff;
+      border-color: #1a1a1a;
+      transition: background-color 0.25s, color 0.25s;
+    }
+  
+  .button:focus,
+  .button:focus-visible {
+      outline: 4px auto -webkit-focus-ring-color;
+  }
+
+
+
+
+
+
+

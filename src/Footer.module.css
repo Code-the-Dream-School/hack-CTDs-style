@@ -1,0 +1,21 @@
+
+.footerBox {
+  background-image: url(https://i0.wp.com/djgwebdevelopment.files.wordpress.com/2023/01/pexels-pretty-sky-background.jpg?ssl=1);
+  overflow-y: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.text {
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgba(236, 205, 218, 0.368);
+  color:rgb(67, 8, 19);
+  width: auto;
+}
+
+
+
+
+
+

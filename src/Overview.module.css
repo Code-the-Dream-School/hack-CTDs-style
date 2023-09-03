@@ -1,0 +1,30 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(101, 43, 62);
+  color: rgb(249, 212, 212);
+  padding-bottom: 3em;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 2em;
+}
+
+
+.text {
+  margin: 0;
+  width: 30%;
+  max-width: 400px;
+  padding-inline: 3em;
+  text-align: left;
+}
+
+
+
+
+
+
