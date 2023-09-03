@@ -8,9 +8,16 @@ import Links from './Links.jsx'
 import Thanks from './Thanks.jsx'
 import Blog from './Blog.jsx'
 import Footer from './Footer.jsx'
-import Fade from 'react-reveal/Fade';
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 function App() {
+
+  React.useEffect(() => {
+    AOS.init({
+      duration : 1000
+    });
+  }, []);
 
   const [searchClicked, setSearchClicked] = React.useState(true);
 
@@ -29,17 +36,12 @@ function App() {
           />
         }
       </header>
-      <main>
-      <Fade>
-          {/*Current use: image carousel*/}
-          <Hero />
-          {/*Current use: overview information/pitch*/}
-          <Overview/>
-          {/*Current use: Links to other site pages for all users*/}
-          <Links/>
-          <Thanks />
-          <Blog />
-        </Fade>
+      <main data-aos="fade-up">
+            <Hero />
+            <Overview />
+            <Links />
+            <Thanks />
+            <Blog />
       </main>
       <Footer/>
       {/*Current Use: Footer*/}

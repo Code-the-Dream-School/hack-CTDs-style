@@ -25,7 +25,7 @@ export default function Header(props) {
     
     return (
         <>
-            <div className={styles.headerBox}>
+            <div className={styles.headerBox} data-aos="fade">
                 <div className={styles.logoContainer}>
                     <a href=""><img src={logo} className={styles.logo} /></a>
                 </div>

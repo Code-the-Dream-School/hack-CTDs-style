@@ -22,7 +22,7 @@ export default function Thanks() {
                     donors like you.
                 </p>
             </div>
-            </div>
+        </div>
     </div>
   );
 }

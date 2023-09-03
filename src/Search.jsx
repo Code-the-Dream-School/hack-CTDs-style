@@ -52,7 +52,7 @@ export default function Search({setClicked}) {
     
     return (
         <>
-            <div className={styles.searchBox}>
+            <div className={styles.searchBox} data-aos="fade">
                 <form onSubmit={handleSubmit} className={styles.searchForm}>
                     <input 
                         type="text"
