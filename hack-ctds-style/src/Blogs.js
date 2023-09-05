@@ -5,7 +5,7 @@ const Blogs = () => {
   return (
     <>
       <div className={styles.Blogs}>
-        <h1>From the Blog</h1>
+        <h1>Blogs Highlights</h1>
         <div className={styles.BlogsContents}>
           <div>
             <img

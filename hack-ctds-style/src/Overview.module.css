@@ -1,7 +1,12 @@
 .Overview {
   text-align: center;
 }
-
+.Overview h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  color: #0c0303;
+  padding: 10px 20px;
+}
 .OverviewContent {
   display: flex;
   justify-content: center; /* centered the content horizontally */

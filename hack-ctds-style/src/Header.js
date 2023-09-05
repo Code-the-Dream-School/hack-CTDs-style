@@ -6,6 +6,7 @@ const Header = () => {
     <header className={styles.header}>
       <video autoPlay loop muted playsInline>
         <source src="/assets/video(1080p).mp4" type="video/mp4" />
+        Your browser doesnt support video!
       </video>
 
       <div className={styles["headerContent"]}>

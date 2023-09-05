@@ -66,13 +66,13 @@ header .headerContent {
 }
 
 .nav button {
-  height: 5vh;
+  height: 4vh;
   margin-top: 33px;
 }
 
 /* CSS */
 .Defination {
-  font-size: 1em; /* Adjust the font size as needed */
+  font-size: 1em;
   margin-left: 230px;
   margin-top: 94px;
   color: #f1fcffe6;
