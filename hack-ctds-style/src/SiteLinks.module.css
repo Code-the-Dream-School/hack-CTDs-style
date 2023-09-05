@@ -1,0 +1,65 @@
+.Container {
+  text-align: center;
+  background-color: #1a706d54;
+  height: 100vh;
+}
+
+.Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cards div {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.12);
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out; /* Added a transition effect for the background color */
+}
+
+.Cards div:hover {
+  cursor: pointer;
+  background-color: rgba(13, 22, 32, 0.7);
+}
+
+.Cards div a {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centered the link text vertically and horizontally */
+  opacity: 0.5; /* Initially hided the link */
+  transition: opacity 0.3s ease-in-out; /* Added a transition effect for opacity */
+}
+
+.Cards div:hover a {
+  opacity: 1; /* Show the link on hover */
+}
+
+.ThankYou {
+  position: relative;
+}
+
+.Video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.ThankYouContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}

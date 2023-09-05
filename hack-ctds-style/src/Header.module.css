@@ -1,0 +1,136 @@
+.header {
+  position: relative;
+  height: 97vh;
+  overflow: hidden;
+}
+
+.header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* I made the video cover the entire header */
+  z-index: -1; /* I placed the video behind other elements */
+}
+
+header .headerContent {
+  z-index: 1;
+  position: absolute;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 1;
+  width: 54vw;
+  margin: 20px;
+  flex-direction: row;
+}
+
+.nav a {
+  margin-top: 28px;
+  padding: 5px;
+  text-decoration: none;
+  color: #efefef;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  animation: shake 0.3s ease infinite; /* I applied the shake animation on hover */
+}
+
+/* I define the shake animation */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.nav button {
+  height: 5vh;
+  margin-top: 33px;
+}
+
+/* CSS */
+.Defination {
+  font-size: 1em; /* Adjust the font size as needed */
+  margin-left: 230px;
+  margin-top: 94px;
+  color: #f1fcffe6;
+  overflow: hidden; /* Hided overflowing content */
+  white-space: nowrap; /* Prevented text from wrapping */
+  border-right: 2px solid #333; /* Added a blinking cursor effect */
+  animation: typing 3s steps(30) forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Defined the typing animation */
+@keyframes typing {
+  from {
+    width: 30px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Defined the blinking cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
+
+.Defination h1,
+h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.Defination h1 {
+  margin-left: 208px;
+  font-size: 3em;
+}
+
+.Defination h2 {
+  margin-left: 130px;
+}
+
+.ClassApp {
+  margin-top: 3em;
+  animation: SlideIn 1s ease forwards;
+}
+.ClassApp button {
+  margin: 5px;
+}
+
+@keyframes SlideIn {
+  to {
+    margin-left: 56em;
+  }
+}

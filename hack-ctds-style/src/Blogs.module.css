@@ -1,0 +1,43 @@
+/* CSS for Blog Cards */
+.Blogs {
+  text-align: center;
+  background-image: url("/public/assets/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+}
+
+.Blogs h1 {
+  margin-top: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.BlogsContents {
+  background-color: #20525f80;
+  display: flex;
+  justify-content: center; /* Centered the cards horizontally */
+  margin: 0 50px;
+}
+
+.BlogsContents div {
+  background-color: #a0c0c7b3;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Added a smooth hover effect */
+  padding: 12px;
+}
+
+.BlogsContents div:hover {
+  transform: scale(1.05); /* Scaled up the card on hover */
+}
+
+.BlogsContents img {
+  margin: 5px;
+}
+.footer {
+  height: 10vh;
+  color: white;
+  margin-top: 76px;
+}
