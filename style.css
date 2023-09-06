@@ -10,8 +10,8 @@
 :root {
     --ctd-blue: #2e3e5a;
     --ctd-orange: #ef6041;
-    --ctd-blue-rgb: rgb(46, 62, 90);
-    --ctd-orange-rgb: rgb(239, 96, 65);
+    --ctd-blue-rgb: rgb(46, 62, 90, 0.6);
+    --ctd-orange-rgb: rgb(239, 96, 65, 0.5);
 }
 
 @media screen and (max-width: 480) {
@@ -43,12 +43,13 @@ h3 {
 }
 
 h5 {
-
+    margin: 1em 0;
+    color: var(--ctd-orange);
 }
 
 p {
     font-size: 1.2em;
-    padding: 1em;
+    margin-top: 1em;
 }
 
 div {
@@ -58,7 +59,7 @@ div {
 
 
 button {
-    margin: 1em;
+    margin: 1em 0;
     padding: 1em;
     border: none;
     border-radius: 0.5em;
@@ -122,9 +123,6 @@ h1:after, .flex > div:after {
     background-color: var(--ctd-orange);
     color: #FFFFFF;
 }
-.logo {
-
-}
 
 .container {
     margin: 0 auto;
@@ -150,33 +148,38 @@ h1:after, .flex > div:after {
     font-size: unset;
     margin: 0 1.2em;
     padding: 0.5em;
-    border-radius: 0.4em;
+    background-color: rgba(256, 256, 256, 0.8);
+    position: relative;
 }
 
 .span_text:nth-child(even) {
-    background-color: var(--ctd-blue);
+    border: 3px solid var(--ctd-blue);
     color: var(--ctd-orange);
 }
 
 .span_text:nth-child(odd) {
-    background-color: var(--ctd-orange);
+    border: 3px solid var(--ctd-orange);
     color: var(--ctd-blue);
 }
 
-.intro {
-    
+.span_text::after {
+    display: block;
+    content: "";
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: -3px;
+    right: -3px;
 }
 
-.action {
-    
+.span_text:nth-child(even):after {
+    border-top: 3px solid var(--ctd-orange);
+    border-right: 3px solid var(--ctd-orange);
 }
 
-.support {
-   
-}
-
-.blog {
-    
+.span_text:nth-child(odd):after {
+    border-top: 3px solid var(--ctd-blue);
+    border-right: 3px solid var(--ctd-blue);
 }
 
 .footer {
