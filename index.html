@@ -15,31 +15,32 @@
 			href="assets/cropped-CTD_Logo_Primary-32x32.jpg"
 			sizes="32x32"
 		/>
-		<link rel="stylesheet" href="style.css"
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
 		<!-- Current use: Navigation bar, with full logo to return to homepage -->
-		<div>
-			<a href=""><img src="assets\cropped-CTD_Logo_Primary-1.jpg" /></a>
+		<div class="flex nav">
+			<a href=""><img class="logo" width="160" src="assets\cropped-CTD_Logo_Primary-1.jpg" /></a>
 			<a href="">About</a>
 			<a href="">Get Involved</a>
 			<a href="">Services</a>
 			<a href="">Class Info</a>
 			<a href="">Blog</a>
 			<a href="">Donate</a>
-			<button>Search</button>
+			<button><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>&nbsp;&nbsp;Search</button>
 		</div>
-		<main>
+		<main class="container">
 			<!-- Current use: image carousel -->
-			<div>
+			<div class="flex motto">
 				<h1>Code the Dream</h1>
-				<h3>Real talent. Real experience. Real Impact.</h3>
+				<img src="assets\carousel-img.jpg" />
+				<h3><span class="span_text">Real talent.</span><span class="span_text">Real experience.</span><span class="span_text">Real Impact.</span></h3>
 				<button>Classes</button>
 				<button>Need an Application?</button>
 			</div>
 
 			<!-- Current use: overview information/pitch -->
-			<div>
+			<div class="flex intro">
 				<h1>Welcome to Code the Dream</h1>
 				<iframe
 					width="560"
@@ -65,7 +66,7 @@
 			</div>
 
 			<!-- Current use: Links to other site pages for all users -->
-			<div>
+			<div class="flex action">
 				<h1>Get Involved</h1>
 				<div>
 					<h3>For Students</h3>
@@ -102,7 +103,7 @@
 				</div>
 			</div>
 
-			<div>
+			<div class="support">
 				<h1>Thank You!</h1>
 				<p>
 					Code the Dream is made possible primarily by individual
@@ -114,9 +115,9 @@
 				</div>
 			</div>
 
-			<div>
+			<div class="blog">
 				<h1>From the Blog</h1>
-				<div>
+				<div class="flex blog__content">
 					<div>
 						<img
 							width="200"
@@ -172,10 +173,10 @@
 		</main>
 
 		<!-- Current Use: Footer -->
-		<div>
+		<div class="footer">
 			<p>
 				Copyright © 2023 Code the Dream · All Rights Reserved · Website
-				by Code the Dream & (INSERT NAME HERE)
+				by Code the Dream & Annie Kwon
 			</p>
 		</div>
 	</body>
